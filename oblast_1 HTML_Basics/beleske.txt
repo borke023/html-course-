@@ -1,0 +1,77 @@
+stranica za nazivom index ce uvek biti home page na hostu tako je namesteno
+
+head je za meta tagove, ne vidi se na stranici, prakticno neki opis stranice za browsere
+
+PRECICA command+/ pretvara red u kome je u komentar,
+ako hocu vise linija onda ih selektujem i kliknem isto i sve ce postati komentar
+
+LIve server---- extenzija za pokretanje lokal hosta koji auto refresha sajt kad sejvam html dokument
+
+lang="en" ide u html tag i opisju jezik
+
+wvi meta tagovi idu u head deo 
+
+prvi <meta charset="UTF-8"> opisuje encoding sajta tj koji su karakteri dozvoljeni
+
+drugi <meta name="viewport" content="width=device-width, initial-scale=1.0">  sluzi za pravljenje sajta resposiv na razlicitim uredjajima
+
+title je ono sto ce se videti na google kada se trazi nas sajt tj ono sto izadje na prvo strani
+treba da opisuje sajt
+
+<meta name="description" content="ovde ide neki tekst koji opisuje nas sajt">
+description je onaj manji tekst koji se pokazuje isood naslova na googleu 
+
+<meta name="keywords" content="ide izmedju 8 i 12reci povezanih sa nasim sajtom, reci razdvajamo zarezima">
+
+ako ne zelimo da se nas sajt rangira na google odamo:
+<meta name="robots" content="NOINDEX, NOFOLLOW">
+
+PRECICA command+ enter prebacuje te u novi cist red bez obzira gde si u proslom redu
+
+Preporucuje se koriscenje samo jednog h1 taga jer SEO gleda h1 tag i koristi ih za rangiranje 
+
+PRECICA ako nam treba filer text u p tag kucam lorem100 i onda kliknem tab i ispisace mi 100 reci!
+
+<strong></strong> boldovan text
+<em></em> italic text
+<br> line break
+<hr> linija i line break
+<del></del> linija kroz tekst
+
+PRECICA shift+option(alt)+down arrow kopira ceo red u sledeci red!
+PRECICA ako drzim option+ strelice mogu da pomeram celu tu liniju gore ili dole
+PRECICA ako drzim option+ strelice levo ili desno idem u toj linije levo ili desno za po jednu rec
+
+Zapamti: 
+element moze da se prebaci u drugi red tako sto se doda <br> izmedju
+ili tako to se elementi ubacu u <p></p> tagove
+<p> ce napraviti veci razmak imzedju redova od <br>
+
+Precica kod pravljenja listi li*broj koliko nam clanova treba kreira toliko clanova odjednom
+
+Stavljam u lable kod forme u for argument nesto i ako isto to stavim u input kao id onda ce kad stisne na lable da mi highlightuje deo forme gde se to unosi
+
+PRECICA kucam input:email i odmah ce mi staviti intput sa typom email
+
+PRECICA Ako hocu da selektujem vise istih stvari od jednom selektujem jednu i onda command+d i selektuje se sledeca ispot i tako dok ne selektujem sve koje hocu da menjam i kada ih promenim ide esc da bi se vratio na jedan kursor
+
+PRECICA shift+tab uvuce nazad sve selektivane redove
+
+preportucljivo je da id-eve dajem kojima znam da ih nece biti vise od jedanput
+a clase mogu da ponovljam 
+
+Kod Hexadecimalnih boja brave dve cifre su red druge green  i trece 2 su blue
+
+SAJT ZA BOJE color-hex.com i htmlcolorcodes.com
+
+ZAPAMTITI mrgin je van bordera a padding je unutar bordera 
+
+Kada se koristi float sledeci element ipod floatovanih ce biti ispod njih e da bi se to izbeglo posle floatovnih elemenata se dodaje div clr sa clear:both; properijem
+
+CSS Basics video 9 pongledati ako nesto nije jasno oko floatinga (kaze da se ne koristi to tkd nije toliko vazno)
+
+Kada pravis sajt samo content stavljas u konteiner da bi ti kontent uvek ostajao na sredini a pozadina se sirila do kraja 
+
+kod hotek websajta koristili smo 2 diva za showcase ovaj vanski je slika a ovaj unutra je kontent koji ce ostajati na sredini i kad se sajt rasiri (onaj treci sa showcase id je samo da bi se znalo da je to jedna celina)
+
+

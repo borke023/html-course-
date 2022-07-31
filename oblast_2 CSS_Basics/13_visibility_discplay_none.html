@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and display none</title>
+    <style>
+        /* targetiranje klase ce ucek ovewritovati targetiranje
+        elementa cak iako je iznad u kodu */
+
+        h1{
+            /* display: none; */
+            /* visibility: hidden; */
+            color: blue !important;
+            /* important ide i ispred klase i svega znaci to ce biti tako */
+        }
+        .hello{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    In quos, neque ab architecto eius accusamus!
+    </p>
+</body>
+</html>

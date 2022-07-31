@@ -1,0 +1,153 @@
+//Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../img/showcase.jpg');
+
+
+//General Styles
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inconsolata', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul{
+    list-style: none;
+}
+
+h2,h3,h4{
+    text-transform: uppercase;
+}
+
+img{
+    width: 100%;
+}
+
+//End of General Styles
+
+//Utilities
+.container{
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+%btn-shared{
+    display:  inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn{
+    &-main{
+        @extend %btn-shared;
+        color: #333;
+        background-color: $main-color;
+    }
+    &-light{
+        @extend %btn-shared;
+        color: #333;
+        background-color: $light-color;
+    }
+    &-dark{
+        @extend %btn-shared;
+        color: #f4f4f4;
+        background-color: $dark-color;
+    }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover{
+    background-color: $main-color;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+//End of Utilities
+
+//Logo
+#logo{
+    width: 70px;
+    height: 70px;
+}
+
+//Main-Nav
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 1rem 1.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover{
+            border-color: $medium-color;
+        }
+
+
+        &.current{
+            border-color: $main-color;
+        }
+    }
+}
+
+
+//Header
+
+#header{
+    &-home{
+        background: $bg-image no-repeat center right/cover;
+        height: 100vh;
+        color: #fff;
+
+        //Header Content
+        .header-content{
+            text-align: center;
+            padding-top: 20%;
+            h1{
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+    }
+    &-inner{
+
+    }
+}
